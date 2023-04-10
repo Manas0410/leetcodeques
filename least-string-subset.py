@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/optimal-partition-of-string/description/
 def least_str_subset(string):
     count = 1
     unique = set()
