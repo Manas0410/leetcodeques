@@ -1,6 +1,6 @@
 def romantointeger(s):
     roman = [['I', 1], ['V', 5], ['X', 10], [
-        'L', 50], ['C', 100], ['D', 100], ['M', 1000]]
+        'L', 50], ['C', 100], ['D', 500], ['M', 1000]]
     # change the string into corresponding no array
     noary = []
     for i in s:
@@ -11,13 +11,12 @@ def romantointeger(s):
     k = len(noary)-1
     res = 0
     while k >= 0:
-        if noary[k] > noary[k-1]:
+        if k > 0 and noary[k] > noary[k-1]:
             res += (noary[k]-noary[k-1])
             k -= 1
         else:
             res += noary[k]
         k -= 1
-    print(noary)
     return res
 
 
