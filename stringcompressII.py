@@ -1,0 +1,19 @@
+def compress(chars):
+    res = ''
+    dictval = {}
+
+    for i in chars:
+        if i in dictval:
+            dictval[i] += 1
+        else:
+            dictval[i] = 1
+    for i, j in dictval.items():
+        if j == 1:
+            res += i
+        else:
+            res += i + str(j)
+    chars = list(res)
+    return chars
+
+
+print(compress(["a", "a", "b", "b", "c", "c", "c"]))
