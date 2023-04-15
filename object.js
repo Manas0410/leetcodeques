@@ -1,4 +1,5 @@
 /*
+https://leetcode.com/playground/LhwrauHo
 - Write method findPath
 - Should take two params:
     - object
@@ -19,7 +20,10 @@ var obj = {
 const findPath = (object, path) => {
     const paths = path.split('.');
     for(let i =0 ;i < paths.length;i++){
-        object = object[path[i]];
+        if(!object.hasOwnProperty(paths[i])){
+            return undefined;
+        }
+        object = object[paths[i]];
     }
     return object;
 };
