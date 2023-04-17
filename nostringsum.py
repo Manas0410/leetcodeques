@@ -4,11 +4,11 @@ def stringSum(num1, num2):
     sum = 0
     res = ''
     while i >= 0 or j >= 0 or carry > 0:
-        if i > 0:
+        if i >= 0:
             sum += int(num1[i])
         else:
             sum += 0
-        if j > 0:
+        if j >= 0:
             sum += int(num2[j])
         else:
             sum += 0
