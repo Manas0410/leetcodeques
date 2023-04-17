@@ -17,6 +17,7 @@ def stringSum(num1, num2):
         carry = sum//10
         i -= 1
         j -= 1
+        sum = 0
     return res[::-1]
 
 
