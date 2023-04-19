@@ -13,4 +13,4 @@ def compress(s):
     return res
 
 
-print(compress('AAAABBBCCD'))
+print(compress('AAAABBBCCDAA'))
