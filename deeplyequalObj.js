@@ -18,7 +18,7 @@ var areDeeplyEqual = function (o1, o2) {
                 return false;
               }
             }
-            if (o1[i]===o2[i]){
+            if (o1[i]!==o2[i]){
                 return false
             }
         }return true
@@ -39,3 +39,4 @@ var areDeeplyEqual = function (o1, o2) {
   return true;
 };
 console.log(areDeeplyEqual({"x":null,"L":[1,2,3]},{"x":null,"L":["1","2","3"]}))
+
