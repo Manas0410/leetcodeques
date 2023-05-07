@@ -1,3 +1,1 @@
-if (o1[i] !== o2[i]) {
-        return false;
-      }
+console.log(areDeeplyEqual({"x":null,"L":[1,2,3]},{"x":null,"L":["1","2","3"]}))
