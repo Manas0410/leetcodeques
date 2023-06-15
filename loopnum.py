@@ -1,6 +1,5 @@
 def loop(n):
     l = list(range(1, n + 1))
-    print(l)
     direction = 1
     strt = 0
     end = -1
